@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+.up{
+    display: grid;
+    grid-template-areas: 
+    "head head head"
+    "side cont cont"
+    "side cont cont";
+    grid-template-rows: 50px auto;
+    height: 100vh;
+}
+.head{
+    grid-area: head;
+    background-color: rgb(0, 42, 84);
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+    padding: 8px 0px 0px 50px;
+}
+.side{
+    grid-area: side;
+    background-color: rgb(201, 224, 245);
+}
+.content{
+    grid-area: cont;
+    background-color: rgb(201, 224, 245);
+    display: grid;
+    grid-template-areas: 
+    "box1 box2 box2"
+    "box3 box4 box5";
+    grid-gap:10px;
+    padding: 40px 70px 20px 5px;
+}
+.box1{
+    grid-area: box1;
+    background-color:  rgb(255, 255, 255);
+}
+.box2{
+    grid-area: box2;
+    background-color:  rgb(255, 255, 255);
+}
+.box3{
+    grid-area: box3;
+    background-color:  rgb(255, 255, 255);
+}
+.box4{
+    grid-area: box4;
+    background-color:  rgb(255, 255, 255);
+}
+.box5{
+    grid-area: box5;
+    background-color: rgb(255, 255, 255);
+}
+
+.up .side .product{
+    border-radius: 10px;
+    margin: 40px 80px 0px 100px;
+    padding: 15px 0px 0px 15px;
+    background-color: rgb(255, 255, 255);
+    height: 75vh;
+    width: 200px;
+}
+
+.up .side .product .form{
+    padding: 5px 0px;
+    
+}
+.up .side .product .form input{
+    margin-right: 10px;
+}
+.up .side .product .form .in {
+    display: flex;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+.up .content .box img {
+    border-radius: 20px;
+    width: 90%;
+    height: 200px;
+    padding: 20px 0px 5px 15px;
+}
+.box,
+.box2,
+.product{
+    border-radius:20px;
+    box-shadow: 0px 0px 10px rgba(26, 4, 191, 0.65);
+}
+.up .content .cont{
+    padding-left: 15px;
+}
+.box2{
+    border-radius:20px;
+    display: flex;
+}
+.up .content .box2 img{
+    border-radius: 20px;
+    width: 50%;
+    height: 85%;
+    padding: 20px 0px 5px 15px;
+}
+.up .content .box2 .cont1{
+    width: 50%;
+    padding:17px
+}
+.up .content .box2 .cont1 p{
+    padding-bottom: 10px;
+}
+.up .content .box2 .cont1 .sale::after{
+    content: "50%";
+    color: red;
+    font-size: 20px;
+    font-weight: 600;
+}
+.up .content .box2 .cont1 .btn{
+    margin-top: 10px;
+}
+.up .content .box2 .cont1 .btn1{
+    background-color: rgba(10, 87, 10, 0.848);
+}
+.up .content .box2 .cont1 .btn2{
+    background-color: rgba(211, 16, 16, 0.888);
+}
+.up .content .box2 .cont1 button{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+    width: 100%;
+    color: white;
+}
